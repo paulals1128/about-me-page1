@@ -1,0 +1,177 @@
+body {
+    background-image: url("img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('fonts/Montserrat-Black.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'Aston Script';
+    src: url('fonts/Aston Script.ttf') format('woff2');
+}
+
+nav {
+    font-size: small;
+    font-style: light;
+    color: black;
+    grid-area: nav;
+    padding: 7px;
+    border-radius: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px;
+
+    a {
+        flex: 1;
+        text-align: center;
+        padding: 15px;
+        border: 0.7px solid black;
+        border-radius: 30px;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+    }
+
+    /* Diseño */
+    .boton-diseno:hover {
+        background-color: pink;
+        color: white;
+        border-color: white;
+    }
+
+    /* Pintura */
+    .boton-pintura:hover {
+        background-color: lavender;
+        color: white;
+        border-color: white;
+    }
+
+    /* Fotografía */
+    .boton-fotografia:hover {
+        background-color: lightblue;
+        color: white;
+        border-color: white;
+    }
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#portfolio-titulo {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+#foto-principal {
+    align-items: center;
+    width: 90%;
+    display: block;
+    color: white;
+    margin: auto;
+}
+
+.texto {
+    margin: auto 25%;
+    text-align: justify;
+    font-size: 15px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-family: Aston Script;
+    font-size: 1.5rem;
+}
+
+.caja1 {
+    max-width: 1000px;
+    text-align: justify;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "main aside";
+}
+
+.sidefoto {
+    grid-area: aside;
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    color: white;
+    padding: 30px;
+    text-align: justify;
+}
+
+h2 {
+    color: #321a19;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 100px;
+    font-family: Montserrat-Black, bold;
+}
+
+.section-title {
+    color: #321a19;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Montserrat-Black, bold;
+}
+
+p {
+    line-height: 1.6;
+}
+
+#quien-soy {
+    color: #000000;
+    font-size: 1rem;
+}
+
+h3 {
+    font-family: aston script;
+}
+
+img {
+    display: block;
+    margin: 0;
+    border-radius: 0%;
+    margin-bottom: 20px;
+    width: 200px;
+
+}
+
+.pinterest a {
+    color: #f5abab;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.pinterest a:hover {
+    color: #000000;
+}
+
+.pinterest-foto {
+    width: 100%;
+    display: block;
+}
