@@ -3,7 +3,7 @@ body {
     background-size: cover;
     background-position: center;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+    margin: auto 25%;
 }
 
 @font-face {
@@ -153,8 +153,7 @@ h3 {
 .galeria1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 220px);
-    
+    grid-template-rows: repeat(1, 22px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,4 +238,118 @@ img {
 .pinterest-foto {
     width: 100%;
     display: block;
+}
+@media (max-width: 600px) {
+
+    /* CUERPO DE LA PÁGINA */
+    body {
+        margin: 0 20px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* MENÚ */
+    nav {
+        margin-top: 15px;
+        padding: 0;
+        gap: 8px;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+
+    /* TÍTULO / LOGO */
+    #portfolio-titulo {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    /* FOTO PRINCIPAL */
+    #foto-principal {
+        width: 100%;
+    }
+
+    /* TEXTO */
+    .texto {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    /* CONTENEDOR PRINCIPAL */
+    .caja1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* FOTO LATERAL */
+    .sidefoto {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* TÍTULOS */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2,
+    .section-title {
+        font-size: 1.2rem;
+        margin-top: 40px;
+    }
+
+    /* GALERÍAS */
+    .galeria1,
+    .galeria2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    /* FOTOS DE LA GALERÍA */
+    .foto {
+        width: 80%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .foto img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* FOTO CUANDO SE PULSA */
+    .foto.activa {
+        transform: scale(1.05) rotateY(360deg);
+        height: auto;
+    }
+
+    /* QUITAMOS EL EFECTO DE SUBIR CON EL RATÓN EN MÓVIL */
+    .foto:hover {
+        transform: none;
+    }
+
+    /* IMÁGENES GENERALES */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* PINTEREST */
+    .pinterest-foto {
+        width: 100%;
+    }
+
+    .pinterest a {
+        font-size: 1rem;
+    }
 }
