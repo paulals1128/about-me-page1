@@ -154,6 +154,41 @@ h3 {
     font-family: aston script;
     color: white;
 }
+.galeria3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 22px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: 0;
+    object-fit: contain;
+}
+.pinture-foto1 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+}
+.pinture-foto2 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+
+}
+.pinture-foto3 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+}
 footer {
     background-color: #000000;
     color: white;
@@ -382,6 +417,17 @@ img {
     footer a {
         font-size: 15px;
     }
+    .galeria3 {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: 0;
+}
 
 
 }
