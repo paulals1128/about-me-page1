@@ -155,10 +155,9 @@ h3 {
     color: white;
 }
 .galeria3 {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 22px);
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
